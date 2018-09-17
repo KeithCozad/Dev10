@@ -1,0 +1,45 @@
+/*
+Creator: Keith Cozad
+Date Created: 9/12/2018
+Date last modified: 9/12/2018
+*/
+
+/*
+styles for the headers and footers for all Quick Bites webpages.
+*/
+
+header {
+	background-color: white;
+	color: black; 
+	height: auto; 
+	text-align: center;
+	border-bottom: 1px solid black; }
+	
+footer {
+	background-color: #d7d7d7;
+	color: black; 
+	height: 67px; 
+	text-align: center;
+	border-top: 1px solid black; 
+	padding: 0px;
+	margin: 0px; }
+	
+h5 {
+	float: left;
+	font-size: .8em; 
+	margin-bottom: -.6em;
+	padding: 0px 0px 2px 5px; 
+	margin-top: 10px; }
+	
+h1 {
+	padding: 0px;
+	margin: 10px; 
+	font-family: cursive; }
+	
+.clear-float {
+	clear:both; }
+	
+.foot {
+	padding: 0px;
+	margin: 7px 0px 10px 0px; }
+	

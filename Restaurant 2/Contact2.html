@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<!--
+	Name: Keith Cozad
+	Date Created: 9/12/2018
+	Most recent revision: 9/12/2018
+-->
+<html land="en">
+	<head>
+		<title> QB: Contact us</title>
+		<link href="styles/restaurantStyles.css" rel="stylesheet" type="text/css" />
+		<style>
+			main {
+				width: 900px;
+				border: 1px solid black}
+				
+			nav {
+				width: 100%;
+				border-bottom: 1px solid black;
+				background-color: #d7d7d7;
+				padding: 3px 0px 3px 0px;}
+				
+			nav a {
+				padding: 15px; }
+				
+			a:visited {
+				color: red; }
+				
+			a:hover {
+				font-weight: bold; }
+				
+			a:active {
+				text-decoration: none; }
+				
+			.contactlist {
+				display: table;
+				column-width: 400px;
+				table-layout: fixed;
+				border-collapse: collapse;
+				padding: 0px 0px 0px 20px;
+				margin: 0px 0px 0px 150px; }
+				
+			.contactlist > li {
+				display: table-row; }
+				
+			.contactlist > li > div {
+				display: table-cell;
+				padding-bottom: 5px; }
+				
+			.contactlist > li > div:first-child {
+				padding-right: 10px;}
+								
+			#submit {
+				display: block;
+				text-align: center;
+				margin: 0 auto;
+				margin-bottom: 20px;}
+				
+			.columnA {
+				text-align: right;
+				font-weight: bold;
+				vertical-align: top; }
+				
+			.columnA2 {
+				text-align: right;
+				vertical-align: top; }
+				
+			textarea {
+				width: 200px; }
+				
+			.box {
+				width: 200px; }
+				
+			.box2 {
+				width: 205px; }
+				
+			.days {
+				margin-left: 20px; }
+					
+		</style>
+	</head>
+	
+	<main>
+		<header>
+			<h5>Contact Us</h5>
+			<div class="clear-float"></div>
+			<hr />
+			<h1>Quick Bites</h1>
+		</header>
+		
+		<nav style="margin-right: 20px;">
+			<p><a href="Home2.html">Home</a> <a href="Menu2.html">Menu</a> <a href="Contact2.html">Contact Us</a></p>
+		</nav>
+		<br>
+		<section>
+			<article id="Contact">
+				<form action="fakepage.html" method="POST">
+
+					<ul class="contactlist">
+						<li>
+							<div class="columnA"><label for="name">Name:</label></div>
+							<div class="columnB"><input class="box" type="text" id="name" name="name"required></div>
+						</li>
+						<li>
+							<div class="columnA2"><label for="email">Email:</label></div>
+							<div class="columnB"><input class="box" type="text" id="email" name="email"></div> 
+						</li>
+						<li>
+							<div class="columnA"><label for="phone">Phone:</label></div>
+							<div class="columnB"><input class="box" type="text" id="phone" name="phone"required></div>
+						</li>
+						<li>
+							<div class="columnA2"><label for="reason">Reason for Inquiry:</label></div>
+							<div class="columnB"><select class="box2" id="reason" name="reason"/>
+								<option value="Catering">Catering</option>
+								<option value="Private Party">Private Party</option>
+								<option value="Feedback">Feedback</option>
+								<option value="Other">Other</option>
+							</select>
+							</div>
+						</li>
+						<li>
+							<div class="columnA2"><label>Additional Information:</label></div>
+							<div class="columnB"><textarea></textarea></div>
+						</li>
+						<li>
+							<div class="columnA2"><label>Have you been to the restaurant?</label></div>
+							<div class="columnB"><input type="radio" name="answer" value="NO" checked />No<input type="radio" name="answer" value="YES" />Yes</div>
+						</li>
+						<li>
+							<div class="columnA2"><label>Best days to contact you:</label></div>
+								<div class="columnB"><input type="checkbox" id="Monday" name="day" value="Monday">
+								<label for="Monday">M</label>
+								
+								<input type="checkbox" class="days" id="Tuesday" name="day" value="Tuesday">
+								<label for="Tuesday">T</label>
+								
+								<input type="checkbox" class="days" id="Wednesday" name="day" value="Wednesday">
+								<label for="Wednesday">W</label>
+								
+								<input type="checkbox" class="days" id="Thursday" name="day" value="Thursday">
+								<label for="Thursday">Th</label>
+								
+								<input type="checkbox" class="days" id="Friday" name="day" value="Friday">
+								<label for="Friday">F</label>
+								</div>
+						</li>
+					</ul>
+					<input id="submit" type="submit" name="submit" value="Send Request">
+				
+				</form>
+			</article>
+		</section>
+		
+		<footer>
+			<p class="foot">123 Fast Ave., Houston, TX, 77064</p>
+			<p class="foot">(713) 123-4567</p>
+		</footer>
+	</main>
+</html>
